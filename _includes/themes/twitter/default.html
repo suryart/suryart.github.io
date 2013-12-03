@@ -30,23 +30,11 @@
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-    <script src="{{ ASSET_PATH }}/javascripts/jquery-2.0.2.min.js"></script>
+    <script src="{{ ASSET_PATH }}/javascripts/jquery-2.0.3.min.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/bootstrap.3.0.2.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        if ($('#desktopTest').is(':hidden')) {
-            // device is == eXtra Small
-            $('#title_bar').removeClass('affix')
-        } else {
-            // device is >= SMaller 
-        }
-      });
-    </script>
   </head>
 
   <body>
-    <div id="desktopTest" class="hidden-xs"></div>
-
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -72,8 +60,8 @@
 
       <div class="row">
         <div class="col-md-3">
-          <div id="title_bar" class="bs-sidebar hidden-print affix hidden-xs" role="complementary" style="">
-            <h3><a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a></h3>
+          <div class="bs-sidebar hidden-print affix hidden-xs">
+            {% include themes/twitter/about_me.html %}
           </div>
         </div>
 
@@ -81,10 +69,9 @@
           <div class="content">
             {{ content }}
           </div>
-          <hr>
         </div>
       </div>
-
+      <hr>
       <div id="footer">
         <div class="container">
           <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
@@ -94,13 +81,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="container-narrow"> -->
-
-      
-
-    <!-- </div> -->
-
     {% include JB/analytics %}
   </body>
 </html>

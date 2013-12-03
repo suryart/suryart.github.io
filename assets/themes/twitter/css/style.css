@@ -2,3 +2,78 @@
 body {
   padding-top: 70px;
 }
+
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+  -webkit-padding-start: 0px;
+}
+
+ul.buttons li {
+  margin: 0px; 
+  padding: 0px; 
+  list-style: none; 
+  display: inline; 
+  float:left;
+}
+
+a.social {
+  display: block;
+  width:  34px;
+  height: 34px;
+  background: url(/assets/themes/twitter/images/social_icons.png);
+  margin: 3px;
+}
+
+a.social.github {
+  background: url(/assets/themes/twitter/images/social_icons.png) -68px 0px no-repeat;
+}
+
+a.social.github:hover {
+  background: url(/assets/themes/twitter/images/social_icons.png) -68px -34px no-repeat;
+}
+
+a.social.linkedin {
+  background: url(/assets/themes/twitter/images/social_icons.png) -102px 0px no-repeat;
+}
+
+a.social.linkedin:hover {
+  background: url(/assets/themes/twitter/images/social_icons.png) -102px -34px no-repeat;
+}
+
+a.social.twitter {
+  background: url(/assets/themes/twitter/images/social_icons.png) 0 0px no-repeat;
+}
+
+a.social.twitter:hover {
+  background: url(/assets/themes/twitter/images/social_icons.png) 0px -34px no-repeat;
+}
+
+a.social.rss {
+  background: url(/assets/themes/twitter/images/social_icons.png) -34px 0px no-repeat;
+}
+
+a.social.rss:hover {
+  background: url(/assets/themes/twitter/images/social_icons.png) -34px -34px no-repeat;
+}
+
+a.social.mail {
+  background: url(/assets/themes/twitter/images/social_icons.png) -136px 0px no-repeat;
+}
+
+a.social.mail:hover {
+  background: url(/assets/themes/twitter/images/social_icons.png) -136px -34px no-repeat;
+}
+
+a.social.gplus {
+  background: url(/assets/themes/twitter/images/social_icons.png) -170px 0px no-repeat;
+}
+
+a.social.gplus:hover {
+  background: url(/assets/themes/twitter/images/social_icons.png) -170px -34px no-repeat;
+}
+
+.col-md-4 {
+  padding-left: 0px;
+}
